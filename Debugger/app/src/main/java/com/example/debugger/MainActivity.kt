@@ -1,6 +1,5 @@
 package com.example.debugger
 
-import android.nfc.Tag
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -14,8 +13,8 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG,"This is where the app crashes before")
         setContentView(R.layout.activity_main)
         Log.d(TAG, "This should be logged if the bug is fixed")
-        val helloTextView: TextView = findViewById(R.id.hello_world)
-        helloTextView.text = "Hello, debugging!"
+//        val helloTextView: TextView = findViewById(R.id.hello_world)
+//        helloTextView.text = "Hello, debugging!"
         logging()
         division()
     }
@@ -23,8 +22,9 @@ class MainActivity : AppCompatActivity() {
     private fun division() {
         val num = 60
         var den = 4
-        repeat(5){
-            Log.d(TAG, "$den")
+        repeat(4){
+            findViewById<TextView>(R.id.division_textview).text = "${num / den}"
+            Thread.sleep(3)
             Log.v(TAG, "${num/den}")
             den--
         }
