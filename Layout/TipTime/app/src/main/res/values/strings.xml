@@ -9,4 +9,6 @@
     <string name="calculate">CALCULATE</string>
     <string name="tip_amount">Tip Amount: %s</string>
 
+    <string name="email_icon">email icon</string>
+
 </resources>
