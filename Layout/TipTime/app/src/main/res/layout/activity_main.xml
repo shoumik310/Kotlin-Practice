@@ -7,27 +7,26 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-<!--    Input text Icon-->
+    <!--    Input text Icon-->
     <ImageView
         android:id="@+id/icon_cost_of_service"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat = "@drawable/ic_store"
         android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@id/cost_of_service"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/cost_of_service"
-        app:layout_constraintBottom_toBottomOf="@id/cost_of_service"
-        />
+        app:srcCompat="@drawable/ic_store" />
 
     <!--    Material Input Text Field for Bill Amount-->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/cost_of_service"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:hint="@string/cost_of_service"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toEndOf="@id/icon_cost_of_service"
-        android:layout_marginStart="16dp"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -38,24 +37,25 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-<!--    Question Text Icon-->
+    <!--    Question Text Icon-->
     <ImageView
         android:id="@+id/icon_service_question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:importantForAccessibility="no"
-        app:srcCompat = "@drawable/ic_service"
+        app:layout_constraintBottom_toBottomOf="@id/service_question"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/service_question"
-        app:layout_constraintBottom_toBottomOf="@id/service_question"/>
-    
+        app:srcCompat="@drawable/ic_service" />
+
     <!-- Question text-->
     <TextView
         android:id="@+id/service_question"
+        style="@style/Widget.TipTime.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/how_was_the_service"
         android:layout_marginStart="16dp"
+        android:text="@string/how_was_the_service"
         app:layout_constraintStart_toEndOf="@id/icon_service_question"
         app:layout_constraintTop_toBottomOf="@id/cost_of_service" />
 
@@ -88,16 +88,16 @@
             android:text="@string/okay_service" />
     </RadioGroup>
 
-<!--    Round Up Icon-->
+    <!--    Round Up Icon-->
     <ImageView
         android:id="@+id/icon_round_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat = "@drawable/ic_round_up"
         android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@id/round_up_switch"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/round_up_switch"
-        app:layout_constraintBottom_toBottomOf="@id/round_up_switch"/>
+        app:srcCompat="@drawable/ic_round_up" />
 
 
     <!-- Round Up switch-->
@@ -105,9 +105,9 @@
         android:id="@+id/round_up_switch"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:checked="true"
         android:text="@string/round_up_tip"
-        android:layout_marginStart="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/icon_round_up"
         app:layout_constraintTop_toBottomOf="@id/tip_options" />
@@ -117,8 +117,8 @@
         android:id="@+id/calculate_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/calculate"
         android:layout_marginTop="8dp"
+        android:text="@string/calculate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@id/round_up_switch"
         app:layout_constraintTop_toBottomOf="@id/round_up_switch" />
@@ -126,10 +126,11 @@
     <!-- Calculate Amount-->
     <TextView
         android:id="@+id/tip_result"
+        style="@style/Widget.TipTime.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tip Amount: $10"
         android:layout_marginTop="8dp"
+        android:text="Tip Amount: $10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/calculate_button" />
 
