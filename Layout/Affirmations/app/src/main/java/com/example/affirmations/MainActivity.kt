@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
 
         //Setting the adapter for the view
-        recyclerView.adapter = ItemAdapter(this,myDataset )
+        recyclerView.adapter = ItemAdapter(this, myDataset)
 
         // Use this setting to improve performance if you know that changes
         // in content do not change the layout size of the RecyclerView
