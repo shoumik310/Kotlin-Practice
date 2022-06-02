@@ -15,7 +15,7 @@
 */
 package com.example.dogglers
 
-import android.graphics.Bitmap
+import      android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
@@ -38,6 +38,7 @@ import com.example.dogglers.data.DataSource
 import org.hamcrest.CoreMatchers
 import org.hamcrest.Description
 import org.hamcrest.Matcher
+import org.hamcrest.Matchers.containsString
 import java.lang.IllegalStateException
 
 open class BaseTest {
@@ -67,7 +68,7 @@ open class BaseTest {
      * Check the content of the first card
      */
     fun checkFirstPosition() {
-        hasListItemContent("Tzeitel", "7", "sunbathing",
+        hasListItemContent("Tzeitel", "Age: 7", "Hobbies: sunbathing",
             R.drawable.tzeitel)
     }
 

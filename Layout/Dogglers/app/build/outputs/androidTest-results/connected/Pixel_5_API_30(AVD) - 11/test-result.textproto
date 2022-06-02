@@ -1,0 +1,73 @@
+# 2022-06-02T10:42:31.822Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 1
+}
+test_status: FAILED
+test_result {
+  test_case {
+    test_class: "HorizontalListTests"
+    test_package: "com.example.dogglers"
+    test_method: "horizontal_scrolling"
+    start_time {
+      seconds: 1654166543
+      nanos: 842000000
+    }
+    end_time {
+      seconds: 1654166550
+      nanos: 308000000
+    }
+  }
+  test_status: FAILED
+  error {
+    error_message: "androidx.test.espresso.base.DefaultFailureHandler$AssertionFailedWithCauseError: \'(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)\' doesn\'t match the selected view.\nExpected: (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)\nGot: view.getGlobalVisibleRect() returned empty rectangle\nView Details: MaterialTextView{id=2131230886, res-name=dog_name, visibility=VISIBLE, width=187, height=74, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@628ec77, tag=null, root-is-layout-requested=false, has-input-connection=false, x=22.0, y=556.0, text=Frankie, input-type=0, ime-target=false, has-links=false}\n\nat dalvik.system.VMStack.getThreadStackTrace(Native Method)\nat java.lang.Thread.getStackTrace(Thread.java:1736)\nat androidx.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:12)\nat androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:7)\nat androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:5)\nat androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:12)\nat com.example.dogglers.HorizontalListTests.horizontal_scrolling(HorizontalListTests.kt:56)\n... 29 trimmed\nCaused by: junit.framework.AssertionFailedError: \'(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)\' doesn\'t match the selected view.\nExpected: (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)\nGot: view.getGlobalVisibleRect() returned empty rectangle\nView Details: MaterialTextView{id=2131230886, res-name=dog_name, visibility=VISIBLE, width=187, height=74, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@628ec77, tag=null, root-is-layout-requested=false, has-input-connection=false, x=22.0, y=556.0, text=Frankie, input-type=0, ime-target=false, has-links=false}\n\nat androidx.test.espresso.matcher.ViewMatchers.assertThat(ViewMatchers.java:16)\nat androidx.test.espresso.assertion.ViewAssertions$MatchesViewAssertion.check(ViewAssertions.java:11)\nat androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:2)\nat androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:12)\nat androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:1)\nat java.util.concurrent.FutureTask.run(FutureTask.java:266)\nat android.os.Handler.handleCallback(Handler.java:938)\nat android.os.Handler.dispatchMessage(Handler.java:99)\nat android.os.Looper.loop(Looper.java:223)\nat android.app.ActivityThread.main(ActivityThread.java:7656)\nat java.lang.reflect.Method.invoke(Native Method)\nat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)\nat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)"
+    error_type: "junit.framework.AssertionFailedError"
+    stack_trace: "androidx.test.espresso.base.DefaultFailureHandler$AssertionFailedWithCauseError: \'(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)\' doesn\'t match the selected view.\nExpected: (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)\nGot: view.getGlobalVisibleRect() returned empty rectangle\nView Details: MaterialTextView{id=2131230886, res-name=dog_name, visibility=VISIBLE, width=187, height=74, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@628ec77, tag=null, root-is-layout-requested=false, has-input-connection=false, x=22.0, y=556.0, text=Frankie, input-type=0, ime-target=false, has-links=false}\n\nat dalvik.system.VMStack.getThreadStackTrace(Native Method)\nat java.lang.Thread.getStackTrace(Thread.java:1736)\nat androidx.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:12)\nat androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:7)\nat androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:5)\nat androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:12)\nat com.example.dogglers.HorizontalListTests.horizontal_scrolling(HorizontalListTests.kt:56)\n... 29 trimmed\nCaused by: junit.framework.AssertionFailedError: \'(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)\' doesn\'t match the selected view.\nExpected: (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)\nGot: view.getGlobalVisibleRect() returned empty rectangle\nView Details: MaterialTextView{id=2131230886, res-name=dog_name, visibility=VISIBLE, width=187, height=74, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@628ec77, tag=null, root-is-layout-requested=false, has-input-connection=false, x=22.0, y=556.0, text=Frankie, input-type=0, ime-target=false, has-links=false}\n\nat androidx.test.espresso.matcher.ViewMatchers.assertThat(ViewMatchers.java:16)\nat androidx.test.espresso.assertion.ViewAssertions$MatchesViewAssertion.check(ViewAssertions.java:11)\nat androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:2)\nat androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:12)\nat androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:1)\nat java.util.concurrent.FutureTask.run(FutureTask.java:266)\nat android.os.Handler.handleCallback(Handler.java:938)\nat android.os.Handler.dispatchMessage(Handler.java:99)\nat android.os.Looper.loop(Looper.java:223)\nat android.app.ActivityThread.main(ActivityThread.java:7656)\nat java.lang.reflect.Method.invoke(Native Method)\nat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)\nat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)"
+  }
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\shoum\\Documents\\Android\\Kotlin-Practice\\Layout\\Dogglers\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_5_API_30(AVD) - 11\\logcat-com.example.dogglers.HorizontalListTests-horizontal_scrolling.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\shoum\\Documents\\Android\\Kotlin-Practice\\Layout\\Dogglers\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_5_API_30(AVD) - 11\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\shoum\\Documents\\Android\\Kotlin-Practice\\Layout\\Dogglers\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_5_API_30(AVD) - 11\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\shoum\\Documents\\Android\\Kotlin-Practice\\Layout\\Dogglers\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_5_API_30(AVD) - 11\\cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "C:\\Users\\shoum\\Documents\\Android\\Kotlin-Practice\\Layout\\Dogglers\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_5_API_30(AVD) - 11\\testlog\\test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}

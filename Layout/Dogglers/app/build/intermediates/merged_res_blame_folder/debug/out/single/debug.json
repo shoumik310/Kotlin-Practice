@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\shoum\\Documents\\Android\\Kotlin-Practice\\Layout\\Dogglers\\app\\build\\intermediates\\merged_res\\debug\\drawable_nox.jpg.flat",
-        "source": "C:\\Users\\shoum\\Documents\\Android\\Kotlin-Practice\\Layout\\Dogglers\\app\\src\\main\\res\\drawable\\nox.jpg"
-    },
-    {
         "merged": "C:\\Users\\shoum\\Documents\\Android\\Kotlin-Practice\\Layout\\Dogglers\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_grid_list.xml.flat",
         "source": "C:\\Users\\shoum\\Documents\\Android\\Kotlin-Practice\\Layout\\Dogglers\\app\\src\\main\\res\\layout\\activity_grid_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\shoum\\Documents\\Android\\Kotlin-Practice\\Layout\\Dogglers\\app\\build\\intermediates\\merged_res\\debug\\drawable_nox.jpg.flat",
+        "source": "C:\\Users\\shoum\\Documents\\Android\\Kotlin-Practice\\Layout\\Dogglers\\app\\src\\main\\res\\drawable\\nox.jpg"
     },
     {
         "merged": "C:\\Users\\shoum\\Documents\\Android\\Kotlin-Practice\\Layout\\Dogglers\\app\\build\\intermediates\\merged_res\\debug\\drawable_tzeitel.jpg.flat",
