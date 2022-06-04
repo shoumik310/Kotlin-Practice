@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.layout_menu,menu)
 
-        val layoutButton = menu?.getItem(R.id.action_switch_layout)
+        val layoutButton = menu?.findItem(R.id.action_switch_layout)
         // Calls code to set the icon based on the LinearLayoutManager of the RecyclerView
         setIcon(layoutButton)
 
