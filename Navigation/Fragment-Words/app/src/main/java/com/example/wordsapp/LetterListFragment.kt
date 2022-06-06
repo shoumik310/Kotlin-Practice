@@ -9,10 +9,18 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.wordsapp.databinding.FragmentLetterListBinding
 
+/**
+ * Entry fragment for the app. Displays a [RecyclerView] of letters.
+ */
 class LetterListFragment : Fragment() {
     private var _binding: FragmentLetterListBinding? = null
+
+    // This property is only valid between onCreateView and
+    // onDestroyView.
     private val binding get() = _binding!!
     private lateinit var recyclerView: RecyclerView
+
+    // Keeps track of which LayoutManager is in use for the [RecyclerView]
     private var isLinearLayoutManager = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,22 +33,28 @@ class LetterListFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        // Retrieve and inflate the layout for this fragment
         _binding = FragmentLetterListBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         recyclerView = binding.recyclerView
+        // Sets the LayoutManager of the recyclerview
+        // On the first run of the app, it will be LinearLayoutManager
         chooseLayout()
     }
 
+    /**
+     * Frees the binding object when the Fragment is destroyed.
+     */
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.layout_menu,menu)
+        inflater.inflate(R.menu.layout_menu, menu)
 
         val layoutButton = menu.findItem(R.id.action_switch_layout)
         setIcon(layoutButton)
@@ -60,12 +74,20 @@ class LetterListFragment : Fragment() {
 
                 return true
             }
+            // Otherwise, do nothing and use the core event handling
+
+            // when clauses require that all possible paths be accounted for explicitly,
+            // for instance both the true and false cases if the value is a Boolean,
+            // or an else to catch all unhandled cases.
             else -> super.onOptionsItemSelected(item)
         }
     }
 
     /**
      * Sets the LayoutManager for the [RecyclerView] based on the desired orientation of the list.
+     *
+     * Notice that because the enclosing class has changed from an Activity to a Fragment,
+     * the signature of the LayoutManagers has to slightly change.
      */
     private fun chooseLayout() {
         if (isLinearLayoutManager) {
